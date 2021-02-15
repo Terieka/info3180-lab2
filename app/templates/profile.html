@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block main %}
+<link href="{{url_for('static',filename='css/profile.css')}}">
+<div class="card">
+    <div id='card-info'>
+    <div class="card-body ">
+    <div class='img d-block m-auto'>
+    <img class="card-img-top rounded-circle" src="{{url_for('static',filename='20190711050023-shutterstock-1101653351.jpeg')}} ">
+    </div>
+      <h5 class="card-title">Terieka Henry</h5>
+      <p>@unrulyter.dev
+      <br>
+      Mandeville, Jamaica
+      <br>
+      Joined, {{date_join}}
+      </p>
+      
+      <div class='row'>
+          <div class="col-sm">
+              10.k
+          </div>
+          <div class="col-sm">
+            200
+        </div>
+        <div class='col-sm'> 
+            2.9K
+        </div>
+      </div>
+      <div class='row'>
+        <div class="col-sm">
+            Posts
+        </div>
+        <div class="col-sm">
+          Following
+      </div>
+      <div class='col-sm'> 
+         Followers
+      </div>
+    </div>
+    </div>
+    <div class='content'>
+      <p class="card-text">Im a 24 year old developer who loves cats. I mean as an Aries what else do you expect. Go go click that follow button :)</p>
+      <a href="#" class="btn btn-primary">Follow</a>
+    </div>
+    </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block css %}
+<style>
+div .img{
+    width:326px;
+    height:250px;
+    justify-content: center;
+}
+
+.card-body{
+    background-color:cadetblue;
+    text-align: center;
+    
+}
+
+.content{
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+</style>
+{% endblock %}
